@@ -1,0 +1,159 @@
+$active_svg : linear-gradient(180deg, #2F5BA2 0%, #0BC698 100%);
+
+.bd-secondary {
+  background-color: rgba(124, 158, 127, 0.15);
+}
+
+.text-gray-secondary {
+  color: #7D8693;
+}
+
+.text-secondary {
+  color: #00A783 !important;
+}
+
+.text-dark-gray {
+  color: #7D8693;
+}
+
+.light-orange-chip {
+  background-color: rgba(215, 129, 106, 0.1);
+  color: #D7816A;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.light-warning-chip {
+  background-color: rgba(245, 202, 93, 0.12);
+  color: #E5BA4D;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.light-gray-chip {
+  background-color: rgba(163, 165, 164, 0.11);
+  color: #A8AAA9;
+  font-weight: 700;
+  font-size: 12px;
+
+}
+
+.bg-gray-light {
+  background-color: #F5F5F7;
+}
+
+.detail--page--img {
+  width: 86px !important;
+  height: 86px !important;
+}
+
+.active-svg {
+  color: linear-gradient(180deg, #2F5BA2 0%, #0BC698 100%) !important;
+}
+
+.add-btn-popup:hover {
+  background: $primary  !important;
+  color: white !important;
+}
+
+.f-lato {
+  font-family: "Lato";
+}
+
+.f-normal {
+  font-style: normal;
+}
+
+/** Font Weights */
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+/** Font Size */
+
+.fs-5 {
+  font-size: 5px;
+}
+
+.fs-7 {
+  font-size: 7px;
+}
+
+.fs-9 {
+  font-size: 9px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+
+
+
+
+
+// font weight is here
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}

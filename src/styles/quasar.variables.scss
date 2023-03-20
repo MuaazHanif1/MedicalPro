@@ -1,0 +1,42 @@
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// $primary : #2A6049;
+$primary :#1c4c9a;
+$secondary : #1C159B;
+// $secondary : #8AC200;
+$text : #0D0C22;
+$text-2 : #7D8693;
+$text-apple: #A50011;
+$sub_title: #9B96A0;
+$button-color: #BD8C5E;
+$strokes : #D2D5E0;
+$dark-gray : #505050;
+$gray : #808192;
+$white : #FFFFFF;
+$input-1 : #484848;
+$off-white : #F5F5F7;
+$paper-white: #F9F9FB;
+$light-green: #E9EEF4;
+$appointmentButtonText: #2F5BA2;
+$gray-light-2 :#EEF2F6;
+// $light-green: #EBF0EE;
+$pink-red : #EF6053;
+$accent : #9C27B0;
+$black-1 : #292B30;
+$dark : #1D1D1D;
+$positive : #21BA45;
+$negative : #C10015;
+$info : #31CCEC;
+$warning : #F2C037;
+$light-grey: #E5E5E5;
+$dark-green: #547F6D;
+$btn-hover :#1c4c9a;
+$chip-accept: #66bb6a;
+$chip-pending: #F9AA3B;
+$chip-cancel: #F24C49;
+$chip-checkin: #325DA4;
+$inactive-chip: #B5B7B6; // fonts
+$medium-font :20px;
+$small-font :13px;
+$reg-font :14px;
+@import '~quasar-variables-styl'

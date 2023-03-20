@@ -1,0 +1,428 @@
+@import '../variables/color.variables.scss';
+@import '../variables/style.variables.scss';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+// font family is already specify, please do not mention font family on each element if the element font family is lato
+body {
+    font-family: 'Lato';
+}
+
+a {
+    text-decoration: none;
+}
+
+$spacings: (
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    20,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    38,
+    35,
+    40,
+    44,
+    45,
+    50,
+    60,
+    75,
+    100,
+    219,
+    285,
+    auto
+);
+
+$sides: (
+    't': 'top',
+    'b': 'bottom',
+    'l': 'left',
+    'r': 'right',
+    'a': ('top', 'left', 'bottom', 'right'),
+    'x': ('left', 'right'),
+    'y': ('top', 'bottom'),
+);
+
+@each $space in $spacings {
+
+    @each $prefix,
+    $positions in $sides {
+        .p#{$prefix}-#{$space} {
+            @each $pos in $positions {
+                padding-#{$pos}: if($space ==auto, $space, #{$space}px !important);
+            }
+        }
+
+        .m#{$prefix}-#{$space} {
+            @each $pos in $positions {
+                margin-#{$pos}: if($space ==auto, $space, #{$space}px);
+            }
+        }
+
+        .m#{$prefix}-md-#{$space} {
+            @media screen {
+                @each $pos in $positions {
+                    margin-#{$pos}: if($space ==auto, $space, #{$space}px) !important;
+                }
+            }
+        }
+    }
+}
+
+.flex-2 {
+    flex-grow: 2;
+}
+
+.flex-4 {
+    flex-grow: 4;
+}
+
+.flex-6 {
+    flex-grow: 6;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+.min-height-window {
+    min-height: 100vh
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.no-hover::hover {
+    background: transparent;
+}
+
+.lato-heading {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0D0C22;
+}
+
+.lato-sub-heading {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    display: block;
+    color: #7D8693;
+}
+
+.property-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text;
+}
+
+//$dark-gray 
+
+.doctor-detail-information-heading {
+    //$black-1
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: $black-1 ;
+}
+
+.doctor-submit-review-heading {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* Primary */
+
+    color: #2A6049;
+}
+
+.border-8 {
+    border-radius: 8px;
+}
+
+.property-value {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-gray;
+}
+
+.doctor-sub-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-2 ;
+}
+
+.rounded-1 {
+    border-radius: 1rem;
+}
+
+.text-green {
+    color: $primary  !important;
+}
+
+.text-gray {
+    color: $blue-grey-5;
+}
+
+.text-secondary {
+    color: $secondary;
+}
+
+.spread-50 {
+    max-width: 50%;
+    width: 100%;
+}
+
+.spread-60 {
+    max-width: 60%;
+    width: 100%;
+}
+
+.border-dashed {
+    border-style: dashed;
+}
+
+.border-red {
+    border-color: red;
+}
+
+.green-background-btn {
+    color: white;
+    background: $primary;
+}
+
+.detail-page-heading {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.d-block {
+    display: block;
+}
+
+.custom-input-selector {
+    .input-label {
+        color: $input-1;
+        font-weight: 400;
+        display: block;
+        font-size: 13px;
+    }
+}
+
+.input-label {
+    color: $input-1;
+    font-weight: 400;
+    display: block;
+    font-size: 13px;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-dark-green {
+    background-color: $dark-green;
+}
+
+.bg-off-white {
+    background-color: $off-white;
+}
+
+.bg-paper-white {
+    background-color: $paper-white;
+}
+
+.bg-light-grey {
+    background-color: $light-green;
+}
+
+.va-top {
+    vertical-align: text-top;
+}
+
+.scrollable {
+    max-height: 100vh;
+    overflow: auto;
+    height: 100vh;
+}
+
+.icon-background {
+    width: 34px;
+    height: 34px;
+    background: rgba(42, 96, 73, 0.08);
+    border-radius: 7px;
+    color: $primary;
+}
+
+.medium-font {
+    font-size: 20px;
+}
+
+.dark-green-background-btn {
+    color: white;
+    background-color: $dark-green;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.color-green {
+    color: $primary;
+}
+
+.font-small {
+    font-size: $small_font;
+}
+
+.icon-border {
+    border-radius: 3px;
+    background-color: lightgray;
+    width: 26px;
+}
+
+.mx-w-960 {
+    max-width: 960px;
+}
+
+:deep .q-menu .q-item__label {
+    text-transform: capitalize;
+}
+
+.placeholder-img-border {
+    border-radius: 22px;
+}
+
+.lato {
+    font-family: 'Lato';
+}
+
+.dark-black {
+    color: #0D0C22;
+    font-weight: 500;
+}
+
+.dark-grey {
+    color: #505050;
+    font-weight: 400;
+
+}
+
+.bg-warning {
+    background-color: $warning
+}
+
+.bg-negative {
+    background-color: $negative;
+}
+
+.text-danger {
+    color: $negative;
+}
+
+.q-btn:before {
+    box-shadow: none;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-600 {
+    font-weight: 600 !important;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.text-lower-case {
+    text-transform: none !important;
+}
+
+.font-size-17 {
+    font-size: 17px !important;
+}
+
+
+.font-size-16 {
+    font-size: 16px !important;
+}
+
+.font-size-14 {
+    font-size: 14px !important;
+}
+
+.semi-grey {
+    color: #A1A8B1;
+}
+
+.q-btn:before {
+    box-shadow: none;
+}
+
+.text-danger {
+    color: $negative;
+}
+
+.scroll-y {
+    overflow-y: auto;
+}
+
+.z-10 {
+    z-index: 10;
+}

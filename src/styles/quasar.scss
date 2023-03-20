@@ -1,0 +1,75 @@
+//IMPORTING THE FONT FAMILY FILE
+@import './font-family.scss';
+//IMPORTING COLOR
+
+@import './quasar.variables.scss';
+@import '~quasar-styl';
+@import './utilities/index.scss';
+// @import '~quasar-addon-styl';
+@import './app/global.scss';
+
+
+.bg-lightsecondary {
+    background: #EBF0EE !important;
+}
+
+.text-graphite {
+    color: #4e4e4e;
+}
+
+.bg-paper {
+    background: $paper-white  !important;
+}
+
+.text-paper {
+    color: $paper-white;
+}
+
+
+// global chip 
+.chip {
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 85px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    .q-chip__content {
+        justify-content: center !important;
+    }
+
+}
+
+.active-chip {
+    background: #1c4c9a;
+}
+
+.inactive-chip {
+    background: $inactive-chip;
+}
+
+.confirm-chip {
+    background: $chip-accept;
+}
+
+.pending-chip {
+    background: $chip-pending;
+}
+
+.cancel-chip {
+    background: $chip-cancel;
+}
+
+.checkin-chip {
+    background: $chip-checkin;
+}
+
+.complete-chip {
+    background: $dark-green;
+}
+
+// end
